@@ -238,7 +238,7 @@ public class UserInterface extends JFrame {
                     if(pol1.getPolynomial().firstEntry() == null)
                         JOptionPane.showMessageDialog(new UserInterface(), "Invalid Polynomial", "Error", JOptionPane.ERROR_MESSAGE);
 
-                    resultTextArea.setText((Operations.integration(pol1)).toString());
+                    resultTextArea.setText((Operations.integration(pol1)).toString() + " + C");
                 }
 
                 if(!polTextField2.getText().isEmpty()){
@@ -250,7 +250,7 @@ public class UserInterface extends JFrame {
                     if(pol2.getPolynomial().firstEntry() == null)
                         JOptionPane.showMessageDialog(new UserInterface(), "Invalid Polynomial", "Error", JOptionPane.ERROR_MESSAGE);
 
-                    resultTextArea2.setText((Operations.integration(pol2)).toString());
+                    resultTextArea2.setText((Operations.integration(pol2)).toString() + " + C");
                 }
 
             }
